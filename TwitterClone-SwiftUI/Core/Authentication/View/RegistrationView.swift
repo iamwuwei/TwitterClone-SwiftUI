@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RegistrationView: View {
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var authViewModel: AuthViewModel
     
     @State var email = ""
     @State var fullName = ""
@@ -82,6 +83,9 @@ struct RegistrationView: View {
                 .padding(.horizontal, 20)
                 
                 Button {
+                    guard let image = selectedUIImage else { return }
+                    
+                    authViewModel.registerUser(email: email, password: password, username: userName, fullname: fullName, profileImage: image)
                     
                 } label: {
                     HStack{
