@@ -39,6 +39,7 @@
 		1CE285D82899977A008B3964 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE285D72899977A008B3964 /* CustomTextField.swift */; };
 		1CE285DA28999A31008B3964 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE285D928999A31008B3964 /* CustomSecureField.swift */; };
 		1CE285DC2899A1E9008B3964 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE285DB2899A1E9008B3964 /* ImagePicker.swift */; };
+		1CE285DE289AA50F008B3964 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CE285DD289AA50F008B3964 /* GoogleService-Info.plist */; };
 		1CE285ED289AF1F6008B3964 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1CE285EC289AF1F6008B3964 /* FirebaseAuth */; };
 		1CE285EF289AF1F6008B3964 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 1CE285EE289AF1F6008B3964 /* FirebaseFirestore */; };
 		1CE285F1289AF1F6008B3964 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 1CE285F0289AF1F6008B3964 /* FirebaseFunctions */; };
@@ -79,6 +80,7 @@
 		1CE285D72899977A008B3964 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		1CE285D928999A31008B3964 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
 		1CE285DB2899A1E9008B3964 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		1CE285DD289AA50F008B3964 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "TwitterClone-SwiftUI/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				1CE2859028993FC5008B3964 /* Core */,
 				1CE2858228983837008B3964 /* TwitterClone_SwiftUIApp.swift */,
 				1CE2858628983839008B3964 /* Assets.xcassets */,
+				1CE285DD289AA50F008B3964 /* GoogleService-Info.plist */,
 				1CE2858828983839008B3964 /* Preview Content */,
 			);
 			path = "TwitterClone-SwiftUI";
