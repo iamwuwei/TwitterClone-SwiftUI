@@ -21,7 +21,7 @@ struct RegistrationView: View {
     
     var body: some View {
         ZStack {
-            VStack(spacing: 0){
+            VStack(){
                 Button {
                     showImagePicker.toggle()
                 } label: {
@@ -111,7 +111,6 @@ struct RegistrationView: View {
                     Spacer()
                 }
                 .foregroundColor(.white)
-                .padding(.bottom, 40)
             }
         }
         .background(Color.blue)
@@ -127,8 +126,8 @@ struct RegistrationView: View {
     }
 }
 
-struct RegistrationView_Previews: PreviewProvider {
-    static var previews: some View {
-        RegistrationView()
-    }
-}
+//struct RegistrationView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        RegistrationView()
+//    }
+//}
