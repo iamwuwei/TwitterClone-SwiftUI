@@ -13,10 +13,17 @@ build/*
 !default.perspectivev3
 *.xcworkspace
 !default.xcworkspace
-xcuserdata
+xcuserdata/*
 profile
 *.moved-aside
+
+#Swift Package Manager
+Packages/
+Package.resolved
+.swiftpm
+
 
 #CocoaPod
 Pods/*
 Podfile.lock
+TwitterClone-SwiftUI/GoogleService-Info.plist

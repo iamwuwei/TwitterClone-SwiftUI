@@ -19,9 +19,21 @@ struct ChatView: View {
     var body: some View {
         VStack{
             ScrollView{
-                VStack(alignment: .leading, spacing: 12) {
-                    ForEach(chatViewModel.messages){ message in
-                       MessageCell(message: message)
+                ScrollViewReader { value in
+                    VStack(alignment: .leading, spacing: 12) {
+                        ForEach(chatViewModel.messages){ message in
+                            MessageCell(message: message)
+                        }
+                    }
+                    .onAppear(perform: {
+                        withAnimation {
+                            value.scrollTo(chatViewModel.messages.count - 1)   // << scroll to view with id
+                        }
+                    })
+                    .onChange(of: chatViewModel.messages.count) { count in
+                        withAnimation {
+                            value.scrollTo(count - 1)   // << scroll to view with id
+                        }
                     }
                 }
             }
@@ -44,7 +56,7 @@ struct ChatView: View {
                 }
                 .padding(.horizontal)
             }
-                .padding()
+            .padding()
         }
         .navigationTitle(user.username)
         .navigationViewStyle(.stack)

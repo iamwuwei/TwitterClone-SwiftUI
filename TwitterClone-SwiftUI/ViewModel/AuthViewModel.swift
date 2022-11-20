@@ -29,8 +29,10 @@ class AuthViewModel: ObservableObject{
         Auth.auth().signIn(withEmail: email, password: password){ result, error in
             if let error = error{
                 print("DEBUG: Failed to login: \(error.localizedDescription)")
+                self.isLoggedIn = false
                 return
             }
+            self.isLoggedIn = true
             print("DEBUG: Successfully logged in")
         }
     }

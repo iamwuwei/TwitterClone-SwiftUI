@@ -237,10 +237,6 @@
 		1CE285B828996918008B3964 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				1CE285B928996942008B3964 /* TextArea.swift */,
-				1CE285D72899977A008B3964 /* CustomTextField.swift */,
-				1CE285D928999A31008B3964 /* CustomSecureField.swift */,
-				1CE285DB2899A1E9008B3964 /* ImagePicker.swift */,
 				1CE28626289ED6BB008B3964 /* Constants.swift */,
 			);
 			path = Utils;
@@ -266,6 +262,10 @@
 		1CE285C528998BB9008B3964 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1CE285B928996942008B3964 /* TextArea.swift */,
+				1CE285D72899977A008B3964 /* CustomTextField.swift */,
+				1CE285D928999A31008B3964 /* CustomSecureField.swift */,
+				1CE285DB2899A1E9008B3964 /* ImagePicker.swift */,
 				1CE285C728998BD4008B3964 /* UsersStatesView.swift */,
 			);
 			path = Components;

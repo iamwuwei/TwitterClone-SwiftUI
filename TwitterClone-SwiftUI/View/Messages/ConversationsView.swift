@@ -28,6 +28,7 @@ struct ConversationsView: View {
             }
             
             ScrollView{
+                HStack{ Spacer() }
                 VStack{
                     ForEach(conversationsViewModel.recentMessages){ message in
                         NavigationLink(destination: {
